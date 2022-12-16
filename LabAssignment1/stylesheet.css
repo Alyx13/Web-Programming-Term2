@@ -1,0 +1,203 @@
+/* Body style */
+body {
+  background-color: gainsboro;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header style */
+header {
+  background-color: ivory;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: antiquewhite;
+  padding: 4px;
+  margin: 4px;
+}
+
+header h1 {
+  font-size: 42pt;
+}
+
+/* Main style */
+main {
+  background-color: ivory;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: antiquewhite;
+  padding: 4px;
+  margin: 4px;
+}
+
+/* Footer style */
+footer {
+  padding-top: 20px;
+  padding-right: 8px;
+  text-align: center;
+  background: ivory;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: antiquewhite;
+  margin: 4px;
+  text-align: right;
+}
+
+li {
+  font-size: 16pt;
+}
+
+/* Navigation Bar */
+
+.topNav a {
+  text-decoration: none;
+  color: snow;
+  transition: .5s;
+  display: block;
+}
+
+.topNav li {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #888;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em;
+
+}
+
+.topNav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.topNav a.active {
+  background-color: bisque;
+  color: #444;
+  cursor: default;
+}
+
+.topNav a:hover {
+  background-color: linen;
+  color: #444;
+}
+
+@media screen and (min-width: 600px) {
+  .topNav li {
+    height: 65px;
+    line-height: 65px;
+    width: 160px;
+    border-bottom: none;
+    font-size: 24pt;
+  }
+
+  .topNav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+}
+
+
+
+/* index.html */
+#ImgMe {
+  max-width: 23%;
+  float: right;
+  margin: 5px;
+  padding: 5px;
+}
+
+.homeP {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18pt;
+}
+
+.homeP>a {
+  font-size: 18pt;
+  text-decoration: none;
+  color: rgb(77, 73, 73);
+}
+
+.homeP>a:hover {
+  color: blue;
+}
+
+
+
+/* resume.html */
+.resumeP {
+  font-size: 16pt;
+}
+#port {
+  margin-left: 10px;
+  font-size: 20pt;
+}
+
+.projectH {
+  margin-left: 108px;
+  margin-bottom: 0;
+}
+
+.projectImg {
+  max-width: 400px;
+  max-height: 350px;
+  position: relative;
+  left: 35px;
+}
+
+.projectP {
+  font-size: 14pt;
+  margin-left: 14px;
+  margin-top: 0;
+}
+
+.projectA {
+  font-size: 14pt;
+  margin-left: 14px;
+  margin-top: 400px;
+}
+
+
+/* courses.html */
+
+/* flex container for course cards */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container>div {
+  background-color: tan;
+  width: 454px;
+  height: 240px;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  border-radius: 8px;
+}
+
+.flex-container>div>h3 {
+  margin: 2px;
+}
+
+.flex-container>div>img {
+  margin: 10px;
+  padding: 2px;
+  font-size: 30px;
+  font-size: 30px;
+  max-width: 40%;
+  margin: 10px;
+  float: left;
+}
+
+.flex-container>div>p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 2px;
+}
+
+.flex-container :hover {
+  background-color: blanchedalmond;
+  transition: 1.0s;
+}

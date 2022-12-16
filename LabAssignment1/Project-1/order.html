@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alexandre Valiquette">
+  <title>Order Form</title>
+  <style>
+    table.beta td,
+    th {
+      border: 1px solid black;
+    }
+
+    .beta table {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2 style="color:blueviolet;">Order Form</h2>
+
+  <fieldset>
+    <legend>Basic Information</legend>
+    <table>
+      <tr>
+        <td>
+          <label for="name">Name: </label>
+        </td>
+        <td>
+          <input type="text" name="name" id="name" size="30" value="Alexandre" disabled>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">Email: </label>
+        </td>
+        <td>
+          <input type="email" name="email" id="email" size="30" value="vali0067@algonquinlive.com">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="address">Address: </label>
+        </td>
+        <td>
+          <textarea id="address" name="address" cols="25" rows="6"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="postcode">Postcode: </label>
+        </td>
+        <td>
+          <input type="text" name="postcode" id="postcode">
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+
+
+
+  <fieldset class="beta">
+    <legend>Product Information</legend>
+    <table class="beta">
+      <tr>
+        <th>Product</th>
+        <th>Part Number</th>
+        <th>Quanity</th>
+        <th>Unit Price</th>
+        <th>Subtotal</th>
+      </tr>
+      <tr>
+        <td>Box</td>
+        <td>AC100</td>
+        <td></td>
+        <td>$5</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Coffee Table</td>
+        <td>AC200</td>
+        <td></td>
+        <td>$100</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Chair</td>
+        <td>AC300</td>
+        <td></td>
+        <td>$150</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Desk</td>
+        <td>Ac400</td>
+        <td></td>
+        <td>$120</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Computer Table</td>
+        <td>AC500</td>
+        <td></td>
+        <td>$130</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4" align="right">Total</td>
+        <td></td>
+      </tr>
+    </table>
+  </fieldset>
+
+
+
+  <h3>Credit Card Information</h3>
+  <p>Card Type:</p>
+  <table>
+    <tr>
+      <td>
+        <input type="radio" name="mastercard" id="mastercard">
+      </td>
+      <td>
+        <label for="mastercard">Mastercard</label>
+      </td>
+      <td>
+        <label for="cardNum">Card Number:</label>
+      </td>
+      <td>
+        <input type="text" name="card number" id="cardNum">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="radio" name="visa" id="visa">
+      </td>
+      <td>
+        <label for="visa">Visa</label>
+      </td>
+      <td>
+        <label for="expiry">Expiry Date: </label>
+      </td>
+      <td>
+        <input type="date" name="Expiry" id="expiry">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="radio" name="giftcard" id="giftcard">
+      </td>
+      <td>
+        <label for="giftcard">Giftcard</label>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td>
+        <label for="delivery"><strong>Delivery Address:</strong></label>
+      </td>
+      <td>
+        <textarea name="deliveryAdd" id="delivery" cols="25" rows="6"></textarea>
+      </td>
+    </tr>
+  </table>
+
+  <form>
+    <input type="submit" name="SendOffer" id="offer" value="Send Order">
+    <input type="submit" name="ClearForm" id="form" value="Clear Form">
+  </form>
+
+</body>
+
+</html>
